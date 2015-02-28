@@ -30,8 +30,6 @@ public class Main {
 				while (n != 1) {
 					if (n % 2 == 1)
 						n = 3 * n + 1;
-					// kor 시프트 연사는 2로 나누는 것과 같다.
-					// eng shif to right is same opr div 2.
 					else
 						n >>= 1; // shft opr( same n /= 2)
 
@@ -47,15 +45,4 @@ public class Main {
 		scanner.close();
 	}
 
-	static long function3Nplus1(long k) {
-		long len = 1;
-		while (k != 1) {
-			len++;
-			if (k % 2 == 1)
-				k = 3 * k + 1;
-			else
-				k >>= 1;
-		}// end while
-		return len;
-	}// end of find
 }
